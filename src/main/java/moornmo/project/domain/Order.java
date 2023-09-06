@@ -18,8 +18,10 @@ public class Order {
 
     private String customerId;
 
+    @Embedded
     private Money totalAmount;
 
+    @Embedded
     private Address shippingAddress;
 
     public static OrderRepository repository() {
